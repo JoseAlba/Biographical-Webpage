@@ -1,0 +1,59 @@
+h3,h4,h5,a{
+    text-align: center;
+    font-weight: bold;
+    color: #22313f;
+}
+
+p{
+    text-indent: 50px;
+    margin-left: 5%;
+    width: 90%;
+    text-align: justify;
+    color: #22313f;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    float: right;
+    margin: 5%;
+}
+
+a:hover{
+    text-decoration-line: underline;
+    border-bottom: solid 1px white;
+}
+
+a:link {
+    text-decoration-line: none;
+}
+
+table{
+    width: 100%;
+}
+tr,td{
+
+    border: 1px solid #007788;
+}
+
+body{
+    color: #22313f;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+li{
+    margin-right: 5%;
+}
+
+li,p,ul,ol{
+    font-family: "Times New Roman", Times, Serif;
+    font-size: medium;
+}

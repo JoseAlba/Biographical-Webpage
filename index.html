@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jose Alba</title>
+    <link rel="stylesheet" type="text/css" href="JAstyle.css" id = "css">
+</head>
+
+<body>
+
+<div id = "English">
+    <div class = "sidebar">
+        <br>
+
+        <h2><a onclick="changeMain('main')"><br>Jose Alba's Webpage<br></a></h2>
+
+        <h3 class ="categories">
+            <a onclick= "changeMain('Bibliography')"><br>Overview<br></a>
+            <a onclick="changeMain('Projects')"><br>Projects<br></a>
+            <!--<a onclick="changeMain('TA')"><br>Teaching Assistant<br></a>-->
+            <a onclick="changeMain('Classes')"><br>Classes<br></a>
+            <a onclick="changeMain('Videos')"><br>Videos<br></a>
+            <a onclick="changeMain('Resume')"><br>Resume<br></a>
+            <a onclick="changeMain('References')"><br>References<br></a>
+            <a onclick="changeMain('Grades')"><br>Grades<br></a>
+            <!--<a onclick="changeMain('Citizenship')" class = "citizenship"><br>Citizenship<br></a>-->
+            <br><button type="button" onclick="changeCSS()"></button><br>
+            <br><button type="button" onclick="changeLanguage('spanish')" class = "languages" id = "spanishflag"></button><br>
+        </h3>
+    </div>
+</div>
+
+<div id = "Spanish" style="display: none">
+    <div class = "sidebar">
+        <br>
+
+        <h2><a onclick="changeMain('main')"><br>Página Web de José Alba<br></a></h2>
+
+        <h3 class ="categories">
+            <a onclick="changeMain('Bibliography')"><br>Bibliografía<br></a>
+            <a onclick="changeMain('Projects')"><br>Proyectos<br></a>
+            <!--<a onclick="changeMain('TA')"><br>Teaching Assistant<br></a>-->
+            <a onclick="changeMain('Classes')"><br>Clases<br></a>
+            <a onclick="changeMain('Videos')"><br>Vídeos<br></a>
+            <a onclick="changeMain('Resume')"><br>Reasumir<br></a>
+            <a onclick="changeMain('References')"><br>Referencias<br></a>
+            <a onclick="changeMain('Grades')"><br>Grados<br></a>
+            <!--<a onclick="changeMain('Citizenship')" class = "citizenship"><br>Ciudadanía<br></a>-->
+            <br><button type="button" onclick="changeCSS()"></button><br>
+            <br><button type="button" onclick="changeLanguage('english')" class = "languages" id = "englishflag"></button><br>
+        </h3>
+    </div>
+</div>
+
+<div class = "main">
+    <iframe id = "mainframe" src="main.html" onload = changeLanguage('english')></iframe>
+</div>
+
+<script src = "JAscript.js"></script>
+</body>
+</html>
